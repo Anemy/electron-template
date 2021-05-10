@@ -1,6 +1,6 @@
 $$$ADD_PROJECT_NAME_HERE
 
-This is a [TypeScript](https://www.typescriptlang.org) minimal [Electron](https://electron.atom.io/docs) application.
+This is a minimal [TypeScript](https://www.typescriptlang.org) [React](https://reactjs.org/) [Electron](https://electron.atom.io/docs)  application.
 
 ## Development
 
@@ -17,6 +17,17 @@ npm install
 npm start
 ```
 
+## Testing
+
+Tests are run with the [Jest](https://jestjs.io/) testing framework.
+
+```bash
+npm test
+```
+
 ## Resources
 - https://electron.atom.io/docs - Electron's documentation
 - https://www.typescriptlang.org/ - Typescript
+- https://nodejs.org/en/ - Node.js
+- https://jestjs.io/ - Jest testing framework
+- https://reactjs.org/ - React
