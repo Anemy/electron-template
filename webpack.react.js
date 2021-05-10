@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: './src/renderer.tsx',
+  watch: true,
   target: 'electron-renderer',
   devtool: 'source-map',
   devServer: {
@@ -22,12 +23,11 @@ module.exports = {
         use: [{ loader: 'ts-loader' }]
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+          'css-loader'
+        ]
       }
     ]
   },
