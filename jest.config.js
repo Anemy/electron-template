@@ -15,5 +15,8 @@ module.exports = {
   ],
   setupFiles: [
     `${__dirname}/setup-tests.js`
-  ]
+  ],
+  moduleNameMapper: {
+    "\\.(css|less)$": "identity-obj-proxy"
+  }
 };

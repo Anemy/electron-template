@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Button from './components/button/Button';
+import { sum } from './modules/sum';
 
 import './styles.css';
 
@@ -13,7 +14,7 @@ class App extends Component {
     console.log('button clicked');
 
     this.setState({
-      count: this.state.count + 1
+      count: sum(this.state.count, 1)
     });
   }
 
@@ -24,7 +25,7 @@ class App extends Component {
 
     return (
       <div>
-        <h1 className="hello-world">Hello Worlds</h1>
+        <h1 className="title">Title</h1>
         <div>
           Count: {count}
         </div>
@@ -33,7 +34,7 @@ class App extends Component {
             className="click-button"
             onClick={this.onButtonClick}
             // as="button"
-          >Click me</Button>
+          >Add one</Button>
         </div>
       </div>
     );
