@@ -31,9 +31,8 @@ class App extends Component {
         </div>
         <div>
           <Button
-            className="click-button"
+            className="add-one-button"
             onClick={this.onButtonClick}
-            // as="button"
           >Add one</Button>
         </div>
       </div>
