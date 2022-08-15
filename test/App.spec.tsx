@@ -1,14 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 
 import App from '../src/App';
 
 describe('App', () => {
   it('should display the title "Title"', () => {
-    const wrapper = shallow(
+    render(
       <App />
     );
 
-    expect(wrapper.find('.title').text()).toEqual('Title');
+    expect(screen.getByText('Title')).toBeVisible();
   });
 });

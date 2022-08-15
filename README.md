@@ -31,3 +31,4 @@ npm test
 - https://nodejs.org/en/ - Node.js
 - https://jestjs.io/ - Jest testing framework
 - https://reactjs.org/ - React
+- https://testing-library.com/docs/react-testing-library/intro/ - React testing library
