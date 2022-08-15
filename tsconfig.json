@@ -3,6 +3,7 @@
     "jsx": "react",
     "module": "commonjs",
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "outDir": "dist",

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 type Props = {
   children: any,
@@ -6,12 +6,10 @@ type Props = {
   onClick: () => void
 };
 
-class Button extends Component<Props> {
-  render() {
-    return (
-      <button {...this.props}/>
-    );
-  }
+function Button(props: Props) {
+  return (
+    <button {...props}/>
+  );
 }
 
 export default Button;
