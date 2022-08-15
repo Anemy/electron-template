@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-type Props = {
-  children: any,
-  className?: string,
-  onClick: () => void
+type ButtonProps = {
+  children: React.ReactChildren | string;
+  className: string;
+  onClick: () => void;
 };
 
-class Button extends Component<Props> {
-  render() {
-    return (
-      <button {...this.props}/>
-    );
-  }
+export const Button: React.FunctionComponent<ButtonProps> = ({
+  children,
+  className,
+  onClick
+}) => {
+  return (
+    <button
+      className={className}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  )
 }
 
 export default Button;
