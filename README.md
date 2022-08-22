@@ -25,6 +25,11 @@ Tests are run with the [Jest](https://jestjs.io/) testing framework.
 npm test
 ```
 
+## Repository folder structure
+src/ - Where all of the source code of the application resides.
+test/ - Folder for all of the tests.
+dist/ - Webpack generated bundle to be run by electron.
+
 ## Resources
 - https://electron.atom.io/docs - Electron's documentation
 - https://www.typescriptlang.org/ - Typescript
